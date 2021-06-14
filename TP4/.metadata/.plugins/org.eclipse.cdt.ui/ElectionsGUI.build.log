@@ -1,0 +1,19 @@
+12:20:14 **** Incremental Build of project ElectionsGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/ElectionsGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic candidatinterface.ui -o ui_candidatinterface.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic electeurinterface.ui -o ui_electeurinterface.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/candidatinterface.o candidatinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/electeurinterface.o electeurinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/electionsgui.o electionsgui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. candidatinterface.h -o debug/moc_candidatinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_candidatinterface.o debug/moc_candidatinterface.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. electeurinterface.h -o debug/moc_electeurinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_electeurinterface.o debug/moc_electeurinterface.cpp
+g++  -o ElectionsGUI debug/desinscriptioninterface.o debug/candidatinterface.o debug/electeurinterface.o debug/main.o debug/electionsgui.o debug/moc_desinscriptioninterface.o debug/moc_candidatinterface.o debug/moc_electeurinterface.o debug/moc_electionsgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ElectionsGUI' && test -f ElectionsGUI.gdb-index && objcopy --add-section '.gdb_index=ElectionsGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ElectionsGUI' 'ElectionsGUI' && rm -f ElectionsGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/ElectionsGUI »
+
+12:20:24 Build Finished (took 10s.199ms)
+

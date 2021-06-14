@@ -1,0 +1,15 @@
+04:03:58 **** Build of configuration Debug for project principal ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/home/etudiant/Bureau/TP_3_Mustapha_BOUHSEN/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: principal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP_3_Mustapha_BOUHSEN/source/Debug" -o "principal"  ./main.o   -lsource
+Finished building target: principal
+ 
+
+04:04:00 Build Finished (took 2s.294ms)
+

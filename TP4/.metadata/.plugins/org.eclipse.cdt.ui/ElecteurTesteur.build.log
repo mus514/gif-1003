@@ -1,0 +1,10 @@
+04:03:50 **** Build of configuration Debug for project ElecteurTesteur ****
+make all 
+Building target: ElecteurTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP_3_Mustapha_BOUHSEN/source/Debug" -o "ElecteurTesteur"  ./ElecteurTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: ElecteurTesteur
+ 
+
+04:03:51 Build Finished (took 1s.404ms)
+

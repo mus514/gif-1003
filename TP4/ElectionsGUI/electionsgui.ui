@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ElectionsGUIClass</class>
+ <widget class="QMainWindow" name="ElectionsGUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="affichage">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>70</y>
+      <width>621</width>
+      <height>431</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>201</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Console d'inscription</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOperations">
+    <property name="title">
+     <string>Operations</string>
+    </property>
+    <addaction name="Inscription_d_un_candidat"/>
+    <addaction name="Inscription_d_un_electeur"/>
+    <addaction name="Desinscription_d_une_personne"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <addaction name="menuOperations"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="Inscription_d_un_candidat">
+   <property name="text">
+    <string>Inscription d'un candidat</string>
+   </property>
+  </action>
+  <action name="Inscription_d_un_electeur">
+   <property name="text">
+    <string>Inscription d'un electeur</string>
+   </property>
+  </action>
+  <action name="Desinscription_d_une_personne">
+   <property name="text">
+    <string>Desinscription d'une personne</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuitter</sender>
+   <signal>triggered()</signal>
+   <receiver>ElectionsGUIClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Inscription_d_un_electeur</sender>
+   <signal>triggered()</signal>
+   <receiver>ElectionsGUIClass</receiver>
+   <slot>dialogElecteur()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Inscription_d_un_candidat</sender>
+   <signal>triggered()</signal>
+   <receiver>ElectionsGUIClass</receiver>
+   <slot>dialogCandidat()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Desinscription_d_une_personne</sender>
+   <signal>triggered()</signal>
+   <receiver>ElectionsGUIClass</receiver>
+   <slot>dialogDesinscrire()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>dialogElecteur()</slot>
+  <slot>dialogCandidat()</slot>
+  <slot>dialogDesinscrire()</slot>
+ </slots>
+</ui>

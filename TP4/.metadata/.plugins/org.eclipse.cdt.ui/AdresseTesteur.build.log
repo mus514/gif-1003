@@ -1,0 +1,10 @@
+04:03:27 **** Build of configuration Debug for project AdresseTesteur ****
+make all 
+Building target: AdresseTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP_3_Mustapha_BOUHSEN/source/Debug" -o "AdresseTesteur"  ./AdresseTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: AdresseTesteur
+ 
+
+04:03:28 Build Finished (took 1s.612ms)
+
